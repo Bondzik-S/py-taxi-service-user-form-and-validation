@@ -92,9 +92,7 @@ class DriverDetailView(LoginRequiredMixin, generic.DetailView):
 
 class DriverCreateView(LoginRequiredMixin, generic.CreateView):
     model = Driver
-    # fields = ["first_name", "last_name", "license_number", "username"]
     success_url = reverse_lazy("taxi:driver-list")
-    # template_name = "taxi/driver_form.html"
     form_class = DriverCreationForm
 
 

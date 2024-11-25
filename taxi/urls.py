@@ -14,7 +14,9 @@ from .views import (
     ManufacturerUpdateView,
     ManufacturerDeleteView,
     DriverCreateView,
-    DriverDeleteView, DriverUpdateView, assign_user_to_car,
+    DriverDeleteView,
+    DriverUpdateView,
+    assign_user_to_car,
 )
 
 urlpatterns = [
